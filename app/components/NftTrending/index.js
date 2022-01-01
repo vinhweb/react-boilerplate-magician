@@ -76,7 +76,7 @@ function NftTrending() {
             View all NFTs <i className="fas fa-arrow-right text-xs" />
           </a>
         </div>
-        <ul className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mt-14 mb-6">
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mt-14 mb-6">
           {trending.map((item, index) => (
             <NftItem key={item.title + item.index} item={item} />
           ))}
@@ -86,12 +86,12 @@ function NftTrending() {
 
       <div className="py-8 md:py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <h3 className="text-5xl text-white">Drops from MagicCraft</h3>
+          <h3 className="text-5xl text-white text-center md:text-left">Drops from MagicCraft</h3>
           <a href="#" className="link mt-3">
             View all NFTs <i className="fas fa-arrow-right text-xs" />
           </a>
         </div>
-        <ul className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mt-14 mb-6">
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mt-14 mb-6">
           {drops.map((item, index) => (
             <NftItem key={item.price + item.index} item={item} />
           ))}
